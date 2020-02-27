@@ -3,9 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/css/styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="styles/img/logo.png" alt="" class="logo" />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search For Hotels"
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use
+                xlink:href="styles/img/sprites.svg#icon-magnifying-glass"
+              ></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="styles/img/sprites.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="styles/img/sprites.svg#icon-message"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <img
+              src="styles/img/user.jpg"
+              alt=""
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__username">Jonas</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          Navigation
+        </nav>
+        <main class="hotel-view">
+          hotel-view
+        </main>
+      </div>
+    </div>
+  </body>
   <script src="./js/index.js"></script>
 </html>
